@@ -1,0 +1,23 @@
+public Boolean companionPlants(String plant1, String plant2) {
+    //code here
+
+    boolean retStat;
+
+    if((plant1 == 'lettuce' && plant2 == 'cucumbers') || (plant1 == 'cucumbers' && plant2 == 'lettuce'))
+    {
+        retStat = true;
+    }else if((plant1 == 'lettuce' && plant2 == 'onions') || (plant1 == 'onions' && plant2 == 'lettuce'))
+    {
+        retStat = true;
+    }else if((plant1 == 'onions' && plant2 == 'carrots') || (plant1 == 'carrots' && plant2 == 'onions'))
+    {
+            retStat = true;
+    }else if((plant1 == 'onions' && plant2 == 'tomatoes') || (plant1 == 'tomatoes' && plant2 == 'onions'))
+    {
+        retStat = true;
+    }else{
+         retStat = false;
+    }
+
+    return retStat;
+}
