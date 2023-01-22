@@ -1,0 +1,18 @@
+public Boolean isPrime(Integer num) {
+    //code here
+
+    boolean retStat;
+
+    for(integer i = 0 ; i < num ; i++)
+    {
+        if(math.mod(num,i) == 0)
+        {
+            retStat = false;
+            break;
+        }else{
+            retStat = true;
+        }
+    }
+
+    return retStat;
+}
