@@ -1,0 +1,52 @@
+public Integer rockPaperScissors(String player1, String player2) {
+    //code here
+ Integer returnStat;
+    if(player1 == 'rock')
+    {
+        if(player2 != 'rock')
+        {
+            if(player2 == 'paper')
+            {
+                returnStat = 2;
+            }else if(player2 == 'scissors')
+            {
+                returnStat = 1;
+            }
+            
+        }else{
+            returnStat = 0;
+        }
+        
+    }else if(player1 == 'paper')
+    {
+        if(player2 != 'paper')
+        {
+            if(player2 == 'rock')
+            {
+                returnStat = 1;
+            }else if(player2 == 'scissors')
+            {
+                returnStat = 2;
+            }
+            
+        }else{
+            returnStat = 0;
+        }
+    }else if(player1 == 'scissors')
+    {
+        if(player2 != 'scissors')
+        {
+            if(player2 == 'rock')
+            {
+                returnStat = 2;
+            }else if(player2 == 'paper')
+            {
+                returnStat = 1;
+            }
+            
+        }else{
+            returnStat = 0;
+        }
+    }
+    return returnStat;
+}
