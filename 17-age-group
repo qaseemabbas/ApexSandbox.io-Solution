@@ -1,0 +1,18 @@
+public String ageGroup(Integer n) {
+    //code here
+    String retStat;
+    if(n == 0 || n == 1)
+    {
+        retStat= 'Infant';
+    }else if(n > 1 && n < 15)
+    {
+        retStat= 'Child';
+    }else if(n > 14 && n < 22)
+    {
+        retStat= 'Youth';
+    }else{
+              retStat= 'Adult';
+    }
+
+    return retStat;
+}
