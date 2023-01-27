@@ -6,7 +6,7 @@ if((firstName == '' || firstName == null) && (lastName == '' || lastName == null
     returnStr = '';
 }else if(!(firstName == '' || firstName == null) && !(lastName == '' || lastName == null))
 {
-    returnStr = firstName+', '+lastName;
+    returnStr = lastName+', '+firstName;
 }
 else if(firstName == '' || firstName == null){
 
